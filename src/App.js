@@ -23,6 +23,7 @@ class BooksApp extends React.Component {
     BooksAPI.update(book, shelf).then((result) => {
       this.updateBooks();
     }).catch(function(err) {
+      console.log(err);
     }) 
   }
 
@@ -31,6 +32,8 @@ class BooksApp extends React.Component {
       this.setState({
         books: booksColl
       })
+    }).catch(function(err) {
+      console.log(err);
     })
   }
 
@@ -61,7 +64,10 @@ class BooksApp extends React.Component {
           </div>
         } />
 
-        <Route exact path="/search" render = {() => <SearchBook onChangeShelf= {this.changeBookShelf} />} />
+        <Route exact path="/search" render = {() => 
+            <SearchBook myBooks = {this.state.books}
+                        onChangeShelf= {this.changeBookShelf} />} 
+        />
         
       </div>
     )

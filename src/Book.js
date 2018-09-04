@@ -16,12 +16,15 @@ class Book extends Component {
     
     render() {
         const book = this.props.book;
-        const authors = book.authors;
-        console.log(authors);
         return (
         <div className="book">
             <div className="book-top">
-            <div className="book-cover" style={{ width: 128, height: 193, backgroundImage: `url("${book.imageLinks.smallThumbnail}")` }}></div>
+            <div className="book-cover" style={{    width: 128, 
+                                                    height: 193, 
+                                                    backgroundImage: book.imageLinks && book.imageLinks.thumbnail ? 
+                                                        `url("${book.imageLinks.thumbnail}")` :
+                                                        "url('./images/no-image-available.png')" }}>
+            </div>
             <div className="book-shelf-changer">
                 <select defaultValue={this.state.selectedShelf || 'none'} onChange={this.handleShelfChange}>
                     <option value="move" disabled>Move to...</option>
