@@ -49,7 +49,9 @@ class SearchBook extends Component {
                                   book.shelf = bookFound.shelf;
                                 }
                                 return book;
-                              })} 
+                              })}
+                            multiSelectionSupport= {this.props.multiSelectionSupport}
+                            selections= {this.props.selections} 
                             onChangeShelf= {this.props.onChangeShelf} />
           </div>
         </div>
