@@ -129,6 +129,7 @@ class BooksApp extends React.Component {
                 selections= {this.state.selections}
                 onBookSelected= {this.onBookSelection}
                 onChangeShelf= {this.changeBookShelf}
+                canRate= {true}
                 onRatingChanged= {this.changeBookRating} />
                 <BookShelf title="Want To Read" books= { 
                   this.state.books.filter((book) => book.shelf === "wantToRead")
@@ -137,6 +138,7 @@ class BooksApp extends React.Component {
                 selections= {this.state.selections}
                 onBookSelected= {this.onBookSelection}                                
                 onChangeShelf= {this.changeBookShelf}
+                canRate= {true}
                 onRatingChanged= {this.changeBookRating} />
                 <BookShelf title="Read" books= { 
                   this.state.books.filter((book) => book.shelf === "read") 
@@ -145,6 +147,7 @@ class BooksApp extends React.Component {
                 selections= {this.state.selections}
                 onBookSelected= {this.onBookSelection}                
                 onChangeShelf= {this.changeBookShelf}
+                canRate= {true}
                 onRatingChanged= {this.changeBookRating} />
               </div>
             </div>
@@ -168,8 +171,9 @@ class BooksApp extends React.Component {
             <SearchBook myBooks = {this.state.books}
                         selections= {this.state.selections}
                         multiSelectionSupport= {false}
-                        onBookSelected= {this.onBookSelection}
-                        onChangeShelf= {this.changeBookShelf} />} 
+                        onBookSelected= {this.onBookSelection}                        
+                        onChangeShelf= {this.changeBookShelf}
+                        canRate= {false} />} 
         />
         
       </div>

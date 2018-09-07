@@ -8,19 +8,42 @@ Project 6 - Submission for Front End Nanodegree. This project is developed using
 
     2. Search and add new books to shelves.
 
-    3. Move multiple selected books with single click
+    3. Move multiple selected books with single click. Supported only in main page.
 
     4. Rate books - User can click to assign rating to book
-        TODO: Server side update is not implemented and out of scope.
-        window.localStorage along with book id can be used to serializing/deserializing ratings
+       
     
 ```
 
 ## Functionalities
     MyReads App
-<div align="center">
-    <img src="/doc-assets/images/MyReadsApp.png" width="90%"</img> 
-</div>
+![MyReads App](/doc-assets/images/MyReadsApp.png)
+
+## Move single book
+    Click on drop down control and select the shelf to move the book
+![MyReads App](/doc-assets/images/MoveToShelf.png)
+
+## Search and add new books to shelves
+    Click on plus icon on bottom right of screen and start typing keyword to search for
+    Now click on drop down control and select the shelf to assign one.
+![MyReads App](/doc-assets/images/SearchAndAdd.png)
+
+## Move multiple selected books
+    Select books by clicking and system will highlight the selection with colored border
+    Once selection is complete, click on arrow down icon on bottom right of screen and
+    select the shelf to move the books
+    ** Available only on main page
+
+![MyReads App](/doc-assets/images/MoveMultipleSelected.png)
+
+## Book rating
+    Click on star to rate the book
+     TODO: Server side update is not implemented and out of scope.
+        window.localStorage along with book id can be used to serializing/deserializing ratings
+    * Functionality working can be confirmed with console.log messages logged inside changeBookRating (App.js)
+    ** Available only on main page
+
+![MyReads App](/doc-assets/images/RateBooks.png)
 
 ## How to run the project?
 
@@ -36,5 +59,5 @@ Project 6 - Submission for Front End Nanodegree. This project is developed using
 
     npm start
 
-4. Site will be hosted at http://localhost:3000/
+4. Site will be hosted at http://localhost:3000/ (check command window to confirm the url)
 
