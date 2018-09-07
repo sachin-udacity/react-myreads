@@ -48,6 +48,13 @@ body, .app {
   right: 25px;
   bottom: 25px;
 }
+
+.change-multiple-book-shelfs {
+  position: fixed;
+  right: 80px;
+  bottom: 25px;
+}
+
 .open-search a {
   display: block;
   width: 50px;
@@ -145,6 +152,13 @@ body, .app {
   align-items: flex-end;
 }
 
+.book-select {
+  border: 2px;
+  border-color: #2a0494;
+  border-style: dashed;
+  margin-left: 3px;
+}
+
 .book-shelf-changer {
   position: absolute;
   right: 0;
@@ -159,11 +173,70 @@ body, .app {
   background-size: 20px;
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
+.book-shelf-changer.multiple {
+  position: fixed;
+  right: 80px;
+  bottom: 25px;
+  width: 50px;
+  height: 50px;
+  background:#5dac97;
+  background-image: url('./icons/arrow-drop-down.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23); 
+ }
+
+ .book-shelf-changer.multiple.disabled {
+  background:#cddad7;
+  background-image: url('./icons/arrow-drop-down.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23); 
+}
+
 .book-shelf-changer select {
   width: 100%;
   height: 100%;
   opacity: 0;
   cursor: pointer;
+}
+
+.multi-select {
+  cursor: pointer;
+}
+
+.book-star-rating {
+  display: flex;
+}
+
+.book-star-empty {
+  position: relative;
+  display: block;
+  bottom: -8px;
+  left: -40px;
+  width: 20px;
+  height: 20px;
+  background:transparent;
+  background-image: url('./icons/star-empty.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20px;
+}
+
+.book-star {
+  position: relative;
+  display: block;
+  bottom: -8px;
+  left: -40px;
+  width: 20px;
+  height: 20px;
+  background:transparent;
+  background-image: url('./icons/star.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20px;
 }
 
 /* book cover */

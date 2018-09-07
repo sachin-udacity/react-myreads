@@ -9,7 +9,12 @@ class BookShelf extends Component {
         <div className="bookshelf">
             <h2 className="bookshelf-title">{title}</h2>
             <div className="bookshelf-books">
-                <BookList books= { books } onChangeShelf= {this.props.onChangeShelf} />
+                <BookList books= { books }
+                    multiSelectionSupport= {this.props.multiSelectionSupport}
+                    selections= {this.props.selections}
+                    onBookSelected= {this.props.onBookSelected} 
+                    onChangeShelf= {this.props.onChangeShelf}
+                    onRatingChanged= {this.props.onRatingChanged} />
             </div>
         </div>);
     }
