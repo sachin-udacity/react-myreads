@@ -18,7 +18,7 @@ Project 6 - Submission for Front End Nanodegree. This project is developed using
 
 ## Functionalities
     MyReads App
-    ![MyReads App](doc-assets/images/MyReadsApp.png)
+    ![MyReads App](https://raw.githubusercontent.com/sachin-udacity/react-myreads/dev/doc-assets/images/MyReadsApp.png)
 
 ## How to run the project?
 
