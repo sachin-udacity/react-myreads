@@ -18,7 +18,7 @@ Project 6 - Submission for Front End Nanodegree. This project is developed using
 
 ## Functionalities
     MyReads App
-    ![MyReads App](/doc-assets/images/MyReadsApp.png)
+    ![MyReads App](doc-assets/images/MyReadsApp.png)
 
 ## How to run the project?
 
