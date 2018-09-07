@@ -14,6 +14,7 @@ class BookShelf extends Component {
                     selections= {this.props.selections}
                     onBookSelected= {this.props.onBookSelected} 
                     onChangeShelf= {this.props.onChangeShelf}
+                    canRate= {this.props.canRate}
                     onRatingChanged= {this.props.onRatingChanged} />
             </div>
         </div>);

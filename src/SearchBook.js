@@ -52,7 +52,8 @@ class SearchBook extends Component {
                               })}
                             multiSelectionSupport= {this.props.multiSelectionSupport}
                             selections= {this.props.selections} 
-                            onChangeShelf= {this.props.onChangeShelf} />
+                            onChangeShelf= {this.props.onChangeShelf}
+                            canRate={this.props.canRate} />
           </div>
         </div>
       );         

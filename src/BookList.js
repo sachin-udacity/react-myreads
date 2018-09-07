@@ -21,6 +21,7 @@ class BookList extends Component {
                         onClick= {this.handleBookSelChange}>
                         <Book book= {book} 
                             onChangeShelf= {this.props.onChangeShelf}
+                            canRate= {this.props.canRate}
                             onRatingChanged= {this.props.onRatingChanged} />
                     </li>
                 ))
